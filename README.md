@@ -1,1 +1,1 @@
-# Profiles REST API by @iamserda
+# Profiles REST API by SerdaCS{@iamserda}
