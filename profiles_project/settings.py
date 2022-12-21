@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ue=#s_b$k^-*5g=8m32)=tuvu7u9ks%_-k9=nn6jm)ab##k^_n'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -121,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# configuring the CUSTOM USER MODEL in django to be used for authentication instead of the default service.
+# AUTH_USER_MODEL = 'app_name.user_model_name'
+AUTH_USER_MODEL = 'api_profilesapp.UserProfile'
