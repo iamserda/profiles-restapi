@@ -1,0 +1,11 @@
+<div>
+{% if users %}
+    <ul>
+    {% for user in users %}
+        <li>First: {{user.first_name}}, Last: {{user.last_name}}, Email: {{user.email}} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>DB is empty.</p>
+{% endif %}
+</div>
